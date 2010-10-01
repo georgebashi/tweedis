@@ -5,6 +5,7 @@ require "bundler/setup"
 
 require 'sinatra'
 require 'haml'
+require 'sinatra/content_for'
 
 load "model.rb"
 load "basic_auth.rb"

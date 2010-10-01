@@ -11,6 +11,8 @@ GEM
       rack (>= 1.0)
     sinatra (1.0)
       rack (>= 1.0)
+    sinatra-content-for (0.2)
+      sinatra
     thin (1.2.7)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -25,4 +27,5 @@ DEPENDENCIES
   redis
   shotgun
   sinatra
+  sinatra-content-for
   thin
