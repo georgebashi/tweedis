@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title Tweedis
+    %link{ :rel => "stylesheet", :href => "http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css", :type => "text/css" }
+    %link{ :rel => "stylesheet", :href => "http://yui.yahooapis.com/2.8.0r4/build/base/base-min.css", :type => "text/css" }
+    :css
+      .tweet { display: block; height: 48px; font-size: 108%; border-bottom: 1px solid #ddd; padding-top: 16px; }
+      .profile { float: left; margin-right: 16px; border: 1px solid #000; }
+  %body
+    #doc.yui-t5
+      #hd
+        %h1
+          %a{ :href => '/' } Tweedis
+      #bd
+        = yield

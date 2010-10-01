@@ -1,0 +1,5 @@
+%h1= @title
+%ul
+  - @users.each do |u|
+    %li
+      %a{ :href => "/user/#{u}" }= u
