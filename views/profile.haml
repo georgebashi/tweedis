@@ -1,13 +1,15 @@
 .yui-b
   #info
     #following
-      Following:
-      %span.count
-        = @profile.following.count
+      %a{ :href => "/user/#{@profile.username}/following" }
+        Following:
+        %span.count
+          = @profile.following.count
     #followers
-      Followers:
-      %span.count
-        = @profile.followers.count
+      %a{ :href => "/user/#{@profile.username}/followers" }
+        Followers:
+        %span.count
+          = @profile.followers.count
 
 #yui-main
   .yui-b
