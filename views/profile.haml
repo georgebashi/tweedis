@@ -1,5 +1,5 @@
-.yui-b
-  #info
+- content_for :header do
+  %aside.right
     #following
       %a{ :href => "/user/#{@profile.username}/following" }
         Following:
@@ -10,16 +10,14 @@
         Followers:
         %span.count
           = @profile.followers.count
-
-#yui-main
-  .yui-b
-    .yui-g
-      %h1= "#{@profile.username}'s profile"
-
+    #follow
       - if logged_in? && !@user.follows?(@profile.username)
         %form{ :action => "/user/#{@profile.username}/follow", :method => 'post' }
           %button Follow
-      %ul
-        - @profile.tweets.each do |t|
-          %li
-            = t.status
+
+#main
+  %h1= "#{@profile.username}'s profile"
+  %ul
+    - @profile.tweets.each do |t|
+      %li
+        = t.status

@@ -1,12 +1,17 @@
-%h1 Welcome to Tweedis
-%a{ :href => '/login' } Log in
-#signup
-  %h2 Sign up
-  %form{ :action => '/signup', :method => 'post' }
-    %label{ :for => 'username' } Username
-    %input{ :name => 'username', :type => 'text' }
-    %br
-    %label{ :for => 'password' } Password
-    %input{ :name => 'password', :type => 'password' }
-    %br
-    %button Sign up
+- content_for :scripts do
+  %script{ :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" }
+  %script{ :src => "http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js" }
+  %script $(function(){ $('form').validate(); })
+
+#main
+  %a.login{ :href => '/login' } Log in
+  %h1 Welcome to Tweedis
+  #signup
+    %h2 Sign up
+    %form{ :action => '/signup', :method => 'post' }
+      %label{ :for => 'username' } Username
+      %input.required{ :name => 'username', :type => 'text', :minlength => '3' }
+      %label{ :for => 'password' } Password
+      %input.required{ :name => 'password', :type => 'password', :minlength => '3' }
+      %button Sign up
+    %div{ :style => "clear:both" }

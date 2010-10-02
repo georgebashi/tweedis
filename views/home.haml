@@ -19,6 +19,7 @@
     %form{ :action => '/post', :method => 'post' }
       %textarea{ :name => 'status' }
       %button Post
+      #count
   %ul
     - @user.timeline.each do |t|
       %li 

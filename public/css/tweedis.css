@@ -14,38 +14,38 @@
  * YUI Compressed
  * http://html5boilerplate.com/
  */
-
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}article,aside,figure,footer,header,hgroup,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
-
-/*
- * Fonts
- * 
- * 
- */
 
 /*
  * Main
  */
-
-body { background:#718768; color:#311811; font:18px/1.35 "Myriad Pro", MyriadPro, Verdana, Sans-serif; }
-a:link, a:visited { color:#fff; text-decoration:none; }
-a:hover, a:active { color:#537FA6; text-decoration:underline; }
-header { background:#70AFE5; padding:40px 20px; }
-#wrap { padding:40px; }
-ul { margin:20px 0; width:610px; list-style:none; border-bottom:1px solid #fff; }
-li { border-top:1px solid #fff; padding:15px 0; }
+body { background:#9FB895; color:#28282; font:18px/1.35 "Myriad Pro", MyriadPro, Verdana, Sans-serif; }
+a:link, a:visited { color:#D43562; text-decoration:none; }
+a:hover, a:active { color:#100B70; text-decoration:underline; }
+h1 { padding-top:5px; font-size:26px; }
+header { background:#97C1E5; padding:40px 20px; }
+#logo, #logo:hover { color:#100B70; text-decoration:none; font-weight:bold; font-size:40px; }
+#wrap { margin:-40px 0 0;}
+ul { margin:20px 0; width:612px; list-style:none; }
+li { border:2px solid #fff; border-width:2px 0; padding:10px 5px; margin-bottom:10px; background:rgba(255,255,255,0.65); min-height:32px; }
 .user { float:left; display:inline; margin-right:10px; background:#fff; }
 dt { float:left; display:inline; clear:both; margin-bottom:8px; }
 li img { vertical-align:top; }
-aside { width:300px; float:right; display:inline; }
-#followers, #following { display:inline; }
+aside { width:160px; float:right; display:inline; }
+aside img { background:#fff; vertical-align:middle; }
+#followers, #following { display:inline; font-size:15px; }
 
 #main { width:700px; margin:0 auto; }
-fieldset { padding:5px; border:1px solid #fff; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; width:600px; }
+fieldset { padding:5px; border:1px solid #fff; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; width:600px; background:rgba(255,255,255,0.65); }
 fieldset textarea { float:left; display:inline; width:520px; font:18px/1.2 "Myriad Pro", MyriadPro, Verdana, Sans-serif; padding:10px; border:0; }
 fieldset button { float:left; display:inline; width:55px; vertical-align:middle; font-size:20px; padding:0; margin-left:5px; }
+#count { float:left; display:inline; width:55px; color:#D43562; padding:0; margin:5px 0 0 5px; }
 footer { position:absolute; bottom:0; left:0; width:100%; padding:10px; background:#fff; font-size:14px; }
 
-
-
-
+#signup { padding:5px; margin-top:15px; border:1px solid #fff; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; width:340px; background:rgba(255,255,255,0.65); }
+#signup h2 { margin:10px 15px; }
+#signup label, #signup input { float:left; display:inline; width:180px; margin:0 0 15px 15px; font:18px/1.2 "Myriad Pro", MyriadPro, Verdana, Sans-serif; }
+#signup label { clear:left; width:100px; }
+#signup button { float:left; display:inline; clear:left; margin:0 0 15px 15px; }
+a.login { float:right; padding:5px 20px; background:#D43562; color:#fff; }
+#signup label.error { display:block; font-size:12px; margin:0 15px 15px 130px; color:#f00; font-style:italic; text-align:right; }

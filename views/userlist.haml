@@ -1,5 +1,8 @@
-%h1= @title
-%ul
-  - @users.each do |u|
-    %li
-      %a{ :href => "/user/#{u}" }= u
+#main
+  %h1= @title
+  %ul
+    - @users.each do |u|
+      %li
+        %a.user{ :href => "/user/#{u}" }
+          %img{ :src => "/img/user.png" }
+        %a{ :href => "/user/#{u}" }= u
