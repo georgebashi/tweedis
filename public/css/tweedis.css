@@ -1,0 +1,51 @@
+/*  _                         _ _     
+ * | |                       | (_)    
+ * | |___      _____  ___  __| |_ ___ 
+ * | __\ \ /\ / / _ \/ _ \/ _` | / __|
+ * | |_ \ V  V /  __/  __/ (_| | \__ \
+ *  \__| \_/\_/ \___|\___|\__,_|_|___/
+ * 
+ * http://github.com/georgebashi/tweedis
+ * CSS by dan@shearmur.co.uk
+ */
+
+/*
+ * HTML5 Boilerplate CSS Reset
+ * YUI Compressed
+ * http://html5boilerplate.com/
+ */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}article,aside,figure,footer,header,hgroup,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/*
+ * Fonts
+ * 
+ * 
+ */
+
+/*
+ * Main
+ */
+
+body { background:#718768; color:#311811; font:18px/1.35 "Myriad Pro", MyriadPro, Verdana, Sans-serif; }
+a:link, a:visited { color:#fff; text-decoration:none; }
+a:hover, a:active { color:#537FA6; text-decoration:underline; }
+header { background:#70AFE5; padding:40px 20px; }
+#wrap { padding:40px; }
+ul { margin:20px 0; width:610px; list-style:none; border-bottom:1px solid #fff; }
+li { border-top:1px solid #fff; padding:15px 0; }
+.user { float:left; display:inline; margin-right:10px; background:#fff; }
+dt { float:left; display:inline; clear:both; margin-bottom:8px; }
+li img { vertical-align:top; }
+aside { width:300px; float:right; display:inline; }
+#followers, #following { display:inline; }
+
+#main { width:700px; margin:0 auto; }
+fieldset { padding:5px; border:1px solid #fff; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; width:600px; }
+fieldset textarea { float:left; display:inline; width:520px; font:18px/1.2 "Myriad Pro", MyriadPro, Verdana, Sans-serif; padding:10px; border:0; }
+fieldset button { float:left; display:inline; width:55px; vertical-align:middle; font-size:20px; padding:0; margin-left:5px; }
+footer { position:absolute; bottom:0; left:0; width:100%; padding:10px; background:#fff; font-size:14px; }
+
+
+
+

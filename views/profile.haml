@@ -1,16 +1,3 @@
-#yui-main
-  .yui-b
-    .yui-g
-      %h1= "#{@profile.username}'s profile"
-      
-      - if logged_in? && !@user.follows?(@profile.username)
-        %form{ :action => "/user/#{@profile.username}/follow", :method => 'post' }
-          %button Follow
-      %ul
-        - @profile.tweets.each do |t|
-          %li
-            = t.status
-
 .yui-b
   #info
     #following
@@ -21,3 +8,16 @@
       Followers:
       %span.count
         = @profile.followers.count
+
+#yui-main
+  .yui-b
+    .yui-g
+      %h1= "#{@profile.username}'s profile"
+
+      - if logged_in? && !@user.follows?(@profile.username)
+        %form{ :action => "/user/#{@profile.username}/follow", :method => 'post' }
+          %button Follow
+      %ul
+        - @profile.tweets.each do |t|
+          %li
+            = t.status

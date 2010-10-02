@@ -1,22 +1,8 @@
-#yui-main
-  .yui-b
-    .yui-g
-      %h1
-        %img.profile{ :src => '/img/user.png' }
-        %a{ :href => "/user/#{@user.username}" }= @user.username
-      %form{ :action => '/post', :method => 'post' }
-        %input{ :name => 'status', :type => 'text' }
-        %button Post
-      %hr
-      %ul
-        - @user.timeline.each do |t|
-          %li.tweet
-            %a{ :href => "/user/#{t.username}" }
-              %img.profile{ :src => '/img/user.png' }
-            %a{ :href => "/user/#{t.username}" }= t.username
-            = t.status
-.yui-b
-  #info
+- content_for :header do
+  %aside.right
+    %h1
+      %img.profile{ :src => '/img/user.png' }
+      %a{ :href => "/user/#{@user.username}" }= @user.username
     #following
       %a{ :href => "/user/#{@user.username}/following" }
         Following:
@@ -27,3 +13,19 @@
         Followers:
         %span.count
           = @user.followers.count
+
+%section#main
+  %fieldset
+    %form{ :action => '/post', :method => 'post' }
+      %textarea{ :name => 'status' }
+      %button Post
+  %ul
+    - @user.timeline.each do |t|
+      %li 
+        %a{ :href => "/user/#{t.username}", :class => "user" }
+          %img.profile{ :src => '/img/user.png' }
+        %a{ :href => "/user/#{t.username}" }= t.username
+        = t.status
+      
+
+

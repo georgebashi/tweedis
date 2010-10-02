@@ -1,17 +1,16 @@
-!!!
-%html
+!!! 5
+%html{ :lang => "en"}
   %head
+    %meta{ :charset => "utf-8" }
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }
+    %meta{ :name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;" }
     %title Tweedis
-    %link{ :rel => "stylesheet", :href => "http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css", :type => "text/css" }
-    %link{ :rel => "stylesheet", :href => "http://yui.yahooapis.com/2.8.0r4/build/base/base-min.css", :type => "text/css" }
-    :css
-      .tweet { display: block; height: 48px; font-size: 108%; border-bottom: 1px solid #ddd; padding-top: 16px; }
-      .profile { float: left; margin-right: 16px; border: 1px solid #000; }
-    = yield_content :header
+    %link{ :rel => "stylesheet", :href => "/css/tweedis.css", :type => "text/css" }
   %body
-    #doc.yui-t5
-      #hd
-        %h1
-          %a{ :href => '/' } Tweedis
-      #bd
-        = yield
+    %header
+      = yield_content :header
+      %a#logo{ :href => '/' } Tweedis
+    #wrap
+      = yield
+    %footer
+      %p Something to go here
